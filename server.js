@@ -26,6 +26,10 @@ app.get("/work", (req, res) => {
   res.render("work-listing.ejs");
 });
 
+app.get("/download", (req, res) => {
+  res.render("work-listing.ejs");
+});
+
 
 
 
