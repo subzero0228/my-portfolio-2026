@@ -27,7 +27,16 @@ app.get("/work", (req, res) => {
 });
 
 app.get("/download", (req, res) => {
-  res.render("work-listing.ejs");
+  // Express handles setting headers and streaming the file
+  res.download(filePath, 'resume.pdf', (err) => {
+    if (err) {
+      // Handle error (e.g., file not found)
+      console.error('Error downloading file:', err);
+      if (!res.headersSent) {
+        res.status(404).send('File not found');
+      }
+    }
+  });
 });
 
 
