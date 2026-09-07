@@ -30,6 +30,16 @@ app.get("/work", (req, res) => {
   res.render("work-listing.ejs");
 });
 
+app.get("/work", (req, res) => {
+  res.render("work-listing.ejs");
+});
+
+
+app.get("/work-single", (req, res) => {
+  res.render("work-single.ejs");
+});
+
+
 app.get("/download", (req, res) => {
   const filePath = path.join(__dirname, "files", "resume.pdf");
 
