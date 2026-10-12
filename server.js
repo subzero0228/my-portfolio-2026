@@ -35,8 +35,8 @@ app.get("/work", (req, res) => {
 });
 
 
-app.get("/work-single", (req, res) => {
-  res.render("work-single.ejs");
+app.get("/walkerfs", (req, res) => {
+  res.render("walkerfs.ejs");
 });
 
 
