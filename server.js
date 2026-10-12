@@ -39,6 +39,12 @@ app.get("/walkerfs", (req, res) => {
   res.render("walkerfs.ejs");
 });
 
+app.get("/logodesign", (req, res) => {
+  res.render("logodesign.ejs");
+});
+
+
+
 
 app.get("/download", (req, res) => {
   const filePath = path.join(__dirname, "files", "resume.pdf");
