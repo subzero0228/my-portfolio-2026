@@ -43,6 +43,13 @@ app.get("/logodesign", (req, res) => {
   res.render("logodesign.ejs");
 });
 
+app.get("/banner", (req, res) => {
+  res.render("Banner.ejs");
+});
+
+app.get("/printable", (req, res) => {
+  res.render("Printable.ejs");
+});
 
 
 
